@@ -18,7 +18,7 @@ To run each component separately:
 Check that the job is running:
 
 ```shell
-$  nomad job status app-job                                                                                                                                                                 (master)nomad-integration-examples
+$ nomad job status app-job                                                                                                                                                                 (master)nomad-integration-examples
 ID            = app-job
 Name          = app-job
 Submit Date   = 2020-07-28T18:21:34-06:00
@@ -51,7 +51,7 @@ ID        Node ID   Task Group  Version  Desired  Status   Created     Modified
 and check that the `Thing` objects got put in the database:
 
 ```shell
-nomad alloc logs 5256ff7e
+$ nomad alloc logs 5256ff7e
 ...
 2020-07-28 18:21:44.355  INFO 34966 --- [           main] com.hashicorp.app.Application            : Started Application in 7.638 seconds (JVM running for 8.433)
 com.hashicorp.app.Thing@5d152bcd
